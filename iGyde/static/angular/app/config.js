@@ -5,9 +5,9 @@ angular.module('bnb').
         $resourceProvider.defaults.stripTrailingSlashes = true;
         $routeProvider.
             when("/", {
-                redirectTo:'/market'
+                redirectTo:'/home'
             }).
-            when("/market", {
+            when("/home", {
                 controller:'marketController as market',
                 templateUrl:'/static/templates/market.html'
             }).
