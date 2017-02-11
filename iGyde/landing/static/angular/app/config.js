@@ -1,5 +1,5 @@
 'use strict';
-angular.module('bnb').
+angular.module('iGyde').
     config(function ($locationProvider, $resourceProvider, $routeProvider) {
         $locationProvider.html5Mode(true);
         $resourceProvider.defaults.stripTrailingSlashes = true;
@@ -7,7 +7,7 @@ angular.module('bnb').
             when("/", {
                 redirectTo:'/home'
             }).
-            when("/home", {
+            when("/map", {
                 controller:'marketController as market',
                 templateUrl:'/static/templates/market.html'
             }).
